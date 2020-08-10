@@ -1,0 +1,21 @@
+{
+	"paper": [
+		{
+			"title": "On the convergence rate in the central limit theorem for weakly dependent random variables",
+			"authors": [
+				"A. N. Tikhomirov"
+			],
+			"body": "The paper finds converge rates for the CLT and can be useful for assessing when Central Limit Theory methods do work as intended in the width setting.",
+			"tags": [
+				"probability",
+				"CLT"
+			],
+			"files": [
+				{
+					"title": "Paper",
+					"url": "https://cdn.jsdelivr.net/gh/trenta3/paper-review@eb38c570f124c110f407b38ddc89df69dd76de4f/files/A.%20N.%20Tikhomirov%20-%20On%20the%20convergence%20rate%20in%20the%20central%20limit%20theorem%20for%20weakly%20dependent%20random%20variables.pdf"
+				}
+			]
+		}
+	]
+}
