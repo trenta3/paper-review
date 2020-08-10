@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://get.mavo.io/v0.2.1/mavo.js"></script>
+    <link rel="stylesheet" href="https://get.mavo.io/v0.2.1/mavo.css">
+  </head>
+  <body>
+    <!-- For Gdrive add gdrive in mv-plugins and set mv-storage="gdrive://Mavo/Papers" -->
+    <div mv-app="papers"
+	 mv-plugins="mathjax markdown"
+	 mv-storage="https://github.com/trenta3/paper-review"
+	 mv-bar="edit save login logout">
+      <h1>Comment latest papers</h1>
+      <div property="paper" mv-multiple mv-order="desc"
+	   style="padding: 0 15px; padding-bottom: 15px; border: 1px solid grey; border-radius: 10px;">
+	<h1 property="title"></h1>
+
+	<span style="display: inline-block; font-weight: 700; font-size: 16px;">Authors:</span>
+	<span property="authors" mv-multiple></span><br/>
+
+	<span style="display: inline-block; font-weight: 700; font-size: 16px;">Tags:</span>
+	<span property="tags" mv-multiple style="padding: 0 10px"></span><br/>
+	
+	<div property="body" class="mv-mathjax markdown"></div>
+
+	<h2>Files</h2>
+	<div mv-multiple property="files">
+	  <span property="title"></span>
+	  <a href="" property="url" mv-upload-path="files"
+	     style="display: inline-block">
+	    [if(url, "Download File", "Upload File")]
+	  </a>
+	  <a href="https://github.com/trenta3/paper-review/blob/[last(split(url, '@'))]" target="_blank">See file</a>
+	  <!-- With GDrive: <a href="[first(split(url, '&'))]" target="_blank">See file</a> -->
+	</div>
+      </div>
+    </div>
+  </body>
+</html>
